@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Api mock to frontend test",
   "engines": {
-    "node": "12.x"
+    "node": "12.x",
+    "npm": "6.x"
   },
   "scripts": {
     "prebuild:dev": "tslint -c tslint.json -p tsconfig.json --fix",
