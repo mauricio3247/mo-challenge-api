@@ -6,9 +6,10 @@
     "node": "12.x"
   },
   "scripts": {
-    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
-    "build": "tsc",
-    "prestart": "npm run build",
+    "prebuild:dev": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build:dev": "tsc",
+    "prestart:dev": "npm run build:dev",
+    "start:dev": "node ./dist/index.js",
     "start": "node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
