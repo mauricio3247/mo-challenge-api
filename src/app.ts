@@ -2,8 +2,9 @@ import express from 'express'
 import morgan from 'morgan'
 import bodyParser from 'body-parser'
 import router from './routes/index'
-
-const app = express();
+import cors from 'cors'
+const app = express()
+app.use(cors())
 app.use(morgan('combined'))
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
