@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Api mock to frontend test",
   "main": "dist/index.js",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "build": "tsc",
